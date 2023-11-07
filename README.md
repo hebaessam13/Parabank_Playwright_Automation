@@ -32,7 +32,8 @@
   * divided into modules to group workflows that are commonly used in tests along with their data to increase readability and maintainability 
 - **tests**:
   * Include tests divided based on the different modules they test
-- **test-results**: include generated reports or tests related artifacts
+- **test-results**:
+  * Should be part of the .gitignore file but included as part of the task solution, it includes generated reports or tests related artifacts.
 #
 ## Limitations with Parabank Demo Web app
 - usually a cleanup should be followed for each test to reset account to their original state.
