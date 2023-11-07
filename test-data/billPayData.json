@@ -1,0 +1,31 @@
+{
+  "billData": [
+    {
+      "name": "Stitch",
+      "address": "Pelekai residence",
+      "city": "Hanapepe",
+      "state": "Hawaii",
+      "zipCode": "96705",
+      "phone": "9283618493",
+      "payeeAccount": "63782",
+      "amount": "3500000",
+      "fromAccount": 0,
+      "expectedRequestMessage": "Bill Payment Complete",
+      "expectedRemainingBalance":"$0.00"
+    },
+    {
+      "name": "Stitch",
+      "address": "Pelekai residence",
+      "city": "Hanapepe",
+      "state": "Hawaii",
+      "zipCode": "96705",
+      "phone": "9283618493",
+      "payeeAccount": "93827",
+      "amount": "4000000",
+      "fromAccount": 0,
+      "expectedRequestMessage": "You can not pay more than balance in your account",
+      "expectedRemainingBalance":"$3500,000.00"
+
+    }
+  ]
+}

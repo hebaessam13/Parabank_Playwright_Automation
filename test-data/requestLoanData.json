@@ -1,0 +1,16 @@
+{
+  "loanData": [
+    {
+      "loanAmount": "5000",
+      "downPayment": "1000",
+      "fromAccount": 0,
+      "expectedRequestMessage": "Approved"
+    },
+    {
+      "loanAmount": "1000",
+      "downPayment": "7000",
+      "fromAccount": 0,
+      "expectedRequestMessage": "Denied"
+    }
+  ]
+}

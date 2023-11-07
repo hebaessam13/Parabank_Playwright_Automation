@@ -1,0 +1,24 @@
+{
+  "newAccountsData": [
+    { "type": "saving", "fromAccountIndex": 0 },
+    { "type": "checking", "fromAccountIndex": 0 },
+    { "type": "saving", "fromAccountIndex": 1 },
+    { "type": "checking", "fromAccountIndex": 2 }
+  ],
+  "expectedNoOfAccounts": 3,
+  "expectedTotalBalance": "$3500,000.00",
+  "transferData": [
+    {
+      "from": 0,
+      "to": 0,
+      "amount": "1000",
+      "expectedMessage": "You can not transfer the amount to same account"
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "amount": "1000",
+      "expectedMessage": "You can not transfer more than the balance in your account."
+    }
+  ]
+}
