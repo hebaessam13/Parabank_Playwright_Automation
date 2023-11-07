@@ -1,6 +1,6 @@
 import { test, expect } from "../pages/PagesSetup";
 import { loginData } from "../test-data/userData.json";
-import "../Utils/registerationAndAccountsSetup";
+import "../utils/registerationAndAccountsSetup";
 import testData from "../test-data/transferData.json";
 
 test.beforeEach(async ({ loginPage }) => {
