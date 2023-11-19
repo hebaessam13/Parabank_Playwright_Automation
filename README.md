@@ -36,7 +36,5 @@
   * Should be part of the .gitignore file but included as part of the task solution, it includes generated reports or tests related artifacts.
 #
 ## Limitations with Parabank Demo Web app
-- usually a cleanup should be followed for each test to reset account to their original state.
-- to overcome the cleanup point above, we could register an account for each test which will introduce an overhead that even running the tests in parallel wouldn't make up for.
 - deployed app on the web is buggy and unstable so to overcome this issue I've tried to find a workaround and I ended up finding a docker image for that app so I used it to run my tests until the online system is stable enough.
     * docker image : https://hub.docker.com/r/parasoft/parabank/
