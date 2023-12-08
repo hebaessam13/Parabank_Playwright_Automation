@@ -13,8 +13,26 @@
 - after npm install all packages including playwrght, you   can run all tests
     ```commandline
     npx playwright test --reporter=html
-    ```
+  ```
 
+## Docker
+### Build image
+  ```commandline
+  docker build . -t parabank_playwright:latest
+  ```
+
+### Runing Tests
+- to run headless tests
+    ```commandline
+    docker run parabank_playwright:latest
+    ```
+- to run headed tests
+```commandline
+docker run -e HEADED=true parabank_playwright:latest
+```
+- to extract reports from container
+    ```commandline
+    docker cp containerID:usr/src/playwright-report ./desiredlocation
 
 ## Project Structure
 

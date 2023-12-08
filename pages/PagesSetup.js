@@ -2,7 +2,7 @@ const base = require("@playwright/test");
 import { RegisterPage } from "./RegisterPage";
 import { AdminPage } from "./AdminPage";
 import { LoginPage } from "./LoginPage";
-import { AccountServicesPage } from "./accountServicesPage";
+import { AccountServicesPage } from "./AccountServicesPage";
 import { OpenNewAccountPage } from "./OpenNewAccountPage";
 import { TransferFundsPage } from "./TransferFundsPage";
 import { RequestLoanPage } from "./RequestLoanPage";

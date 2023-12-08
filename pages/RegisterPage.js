@@ -1,5 +1,5 @@
 import { expect } from "./PagesSetup";
-import { AccountServicesPage } from "./accountServicesPage";
+import { AccountServicesPage } from "./AccountServicesPage";
 export class RegisterPage {
   constructor(page) {
     this.page = page;

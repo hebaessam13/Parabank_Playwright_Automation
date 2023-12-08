@@ -1,5 +1,5 @@
 import { OpenNewAccountPage } from "../pages/OpenNewAccountPage";
-import { AccountServicesPage } from "../pages/accountServicesPage";
+import { AccountServicesPage } from "../pages/AccountServicesPage";
 import { newAccountsData } from "../test-data/transferData.json";
 import { expect } from "../pages/PagesSetup";
 import { AdminPage } from "../pages/AdminPage";

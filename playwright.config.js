@@ -3,6 +3,7 @@ import { defineConfig, devices } from "@playwright/test";
 module.exports = defineConfig({
   testDir: "./tests",
   outputDir: "./test-results",
+  reporter: [['html', { open: 'never' }]],
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
