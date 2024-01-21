@@ -1,8 +1,8 @@
-import { expect } from "./PagesSetup";
-import { OpenNewAccountPage } from "./OpenNewAccountPage";
-import { TransferFundsPage } from "./TransferFundsPage";
-import { RequestLoanPage } from "./RequestLoanPage";
-import { BillPayPage } from "./BillPayPage";
+import { expect } from "./pages-setup";
+import { OpenNewAccountPage } from "./open-new-accountPage";
+import { TransferFundsPage } from "./transfer-funds-page";
+import { RequestLoanPage } from "./request-loan-page";
+import { BillPayPage } from "./bill-pay-page";
 export class AccountServicesPage {
   constructor(page) {
     this.path = "index.htm";

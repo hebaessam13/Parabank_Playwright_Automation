@@ -1,8 +1,8 @@
-import { OpenNewAccountPage } from "../pages/OpenNewAccountPage";
-import { AccountServicesPage } from "../pages/AccountServicesPage";
-import { newAccountsData } from "../test-data/transferData.json";
-import { expect } from "../pages/PagesSetup";
-import { AdminPage } from "../pages/AdminPage";
+import { OpenNewAccountPage } from "../pages/open-new-accountPage";
+import { AccountServicesPage } from "../pages/account-services-page";
+import { newAccountsData } from "../test-data/transfer-data.json";
+import { expect } from "../pages/pages-setup";
+import { AdminPage } from "../pages/admin-page";
 
 export async function openMultipleAccountForUser(page, num) {
   const accountServicesPage = new AccountServicesPage(page);

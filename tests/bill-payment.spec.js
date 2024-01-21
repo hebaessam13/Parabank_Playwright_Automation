@@ -1,7 +1,6 @@
-import { test, expect } from "../pages/PagesSetup";
-import { loginData } from "../test-data/userData.json";
-import "../utils/registerationSetup";
-import { billData } from "../test-data/billPayData.json";
+import { test, expect } from "../pages/pages-setup";
+import "../utils/registeration-setup";
+import { billData } from "../test-data/bill-Payment-data.json";
 import { registerWithRandomUser } from "../workflows/users";
 
 test.beforeEach(async ({ page }) => {

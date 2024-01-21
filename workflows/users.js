@@ -1,6 +1,6 @@
-import { AdminPage } from "../pages/AdminPage";
-import { RegisterPage } from "../pages/RegisterPage";
-import { getTestUser } from "../utils/dataHelper";
+import { AdminPage } from "../pages/admin-page";
+import { RegisterPage } from "../pages/register-page";
+import { getTestUser } from "../utils/data-helper";
 
 export async function registerWithRandomUser(page) {
   const register = new RegisterPage(page);

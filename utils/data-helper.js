@@ -1,7 +1,7 @@
-import { userDataTemplate } from "../test-data/userData.json";
+import { userDataTemplate } from "../test-data/user-data.json";
 import Randomstring from "randomstring";
 export async function getTestUser() {
-  const testUser = JSON.parse(JSON.stringify( userDataTemplate));
+  const testUser = JSON.parse(JSON.stringify(userDataTemplate));
   let username = Randomstring.generate(7);
   let password = Randomstring.generate(7);
   testUser.registerData.firstName = Randomstring.generate({
@@ -38,8 +38,8 @@ export async function getTestUser() {
   });
   testUser.registerData.username = username;
   testUser.registerData.password = password;
-  testUser.registerData.confirmPassword = password
+  testUser.registerData.confirmPassword = password;
   testUser.loginData.username = username;
-  testUser.loginData.password = password
+  testUser.loginData.password = password;
   return testUser;
 }

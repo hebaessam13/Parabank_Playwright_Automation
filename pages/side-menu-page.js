@@ -1,4 +1,4 @@
-import { AdminPage } from "./AdminPage";
+import { AdminPage } from "./admin-page";
 export class SideMenuPage {
   constructor(page) {
     this.page = page;

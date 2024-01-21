@@ -1,4 +1,4 @@
-import { expect } from "./PagesSetup";
+import { expect } from "./pages-setup";
 export class LoginPage {
   constructor(page) {
     this.page = page;

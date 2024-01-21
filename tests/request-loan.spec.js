@@ -1,6 +1,6 @@
-import { test, expect } from "../pages/PagesSetup";
-import "../utils/registerationSetup";
-import { loanData } from "../test-data/requestLoanData.json";
+import { test, expect } from "../pages/pages-setup";
+import "../utils/registeration-setup";
+import { loanData } from "../test-data/request-loan-data.json";
 import { registerWithRandomUser } from "../workflows/users";
 
 test.beforeEach(async ({ page }) => {

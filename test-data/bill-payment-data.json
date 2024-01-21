@@ -11,7 +11,7 @@
       "amount": "3500000",
       "fromAccount": 0,
       "expectedRequestMessage": "Bill Payment Complete",
-      "expectedRemainingBalance":"$0.00"
+      "expectedRemainingBalance": "$0.00"
     },
     {
       "name": "Stitch",
@@ -24,8 +24,7 @@
       "amount": "4000000",
       "fromAccount": 0,
       "expectedRequestMessage": "You can not pay more than balance in your account",
-      "expectedRemainingBalance":"$3500,000.00"
-
+      "expectedRemainingBalance": "$3500,000.00"
     }
   ]
 }

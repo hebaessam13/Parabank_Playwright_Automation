@@ -1,12 +1,12 @@
 import { test as baseTest } from "@playwright/test";
-import { RegisterPage } from "./RegisterPage";
-import { AdminPage } from "./AdminPage";
-import { LoginPage } from "./LoginPage";
-import { AccountServicesPage } from "./AccountServicesPage";
-import { OpenNewAccountPage } from "./OpenNewAccountPage";
-import { TransferFundsPage } from "./TransferFundsPage";
-import { RequestLoanPage } from "./RequestLoanPage";
-import { BillPayPage } from "./BillPayPage";
+import { RegisterPage } from "./register-page";
+import { AdminPage } from "./admin-page";
+import { LoginPage } from "./login-page";
+import { AccountServicesPage } from "./account-services-page";
+import { OpenNewAccountPage } from "./open-new-accountPage";
+import { TransferFundsPage } from "./transfer-funds-page";
+import { RequestLoanPage } from "./request-loan-page";
+import { BillPayPage } from "./bill-pay-page";
 
 exports.test = baseTest.extend({
   registerPage: async ({ page }, use) => {
