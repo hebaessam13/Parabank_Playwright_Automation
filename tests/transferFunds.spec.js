@@ -1,11 +1,13 @@
 import { test, expect } from "../pages/PagesSetup";
-import { loginData } from "../test-data/userData.json";
-import "../utils/registerationAndAccountsSetup";
+import "../utils/registerationSetup";
 import testData from "../test-data/transferData.json";
+import { registerWithRandomUser } from "../workflows/users";
+import { openMultipleAccountForUser } from "../workflows/accounts";
 
-test.beforeEach(async ({ loginPage }) => {
-  await loginPage.goTo();
-  await loginPage.loginUserWith(loginData.username, loginData.password);
+
+test.beforeEach(async ({ page }) => {
+  await registerWithRandomUser(page);
+  await openMultipleAccountForUser(page, 2);
 });
 test.describe("AC-01", () => {
   for (let transferTestCase of testData.transferData) {

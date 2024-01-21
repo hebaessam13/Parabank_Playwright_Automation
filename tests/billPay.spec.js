@@ -2,10 +2,10 @@ import { test, expect } from "../pages/PagesSetup";
 import { loginData } from "../test-data/userData.json";
 import "../utils/registerationSetup";
 import { billData } from "../test-data/billPayData.json";
+import { registerWithRandomUser } from "../workflows/users";
 
-test.beforeEach(async ({ loginPage }) => {
-  await loginPage.goTo();
-  await loginPage.loginUserWith(loginData.username, loginData.password);
+test.beforeEach(async ({ page }) => {
+  await registerWithRandomUser(page);
 });
 test.describe("AC-03", () => {
   for (let data of billData) {
@@ -26,10 +26,12 @@ test.describe("AC-03", () => {
         data.amount,
         accounts[data.fromAccount]
       );
-      await expect.soft(
-        await billPayPage.getBillPaymentrResult(),
-        "Verifying bill payment results"
-      ).toContainText(data.expectedRequestMessage);
+      await expect
+        .soft(
+          await billPayPage.getBillPaymentrResult(),
+          "Verifying bill payment results"
+        )
+        .toContainText(data.expectedRequestMessage);
       await expect(
         await accountServicesPage.getTotalAccountsBalance(),
         "Verifying remaining balance"

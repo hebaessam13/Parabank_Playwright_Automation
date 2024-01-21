@@ -3,13 +3,13 @@ import { defineConfig, devices } from "@playwright/test";
 module.exports = defineConfig({
   testDir: "./tests",
   outputDir: "./test-results",
-  reporter: [['html', { open: 'never' }]],
-  fullyParallel: false,
+  reporter: [["html", { open: "never" }]],
+  fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : 1,
+  workers: process.env.CI ? 2 : 2,
   use: {
-    baseURL: "https://parabank.parasoft.com/parabank/",
+    baseURL: "https://parabank.parasoft.com/",
     trace: "on-first-retry",
     testIdAttribute: "id",
   },
@@ -18,9 +18,9 @@ module.exports = defineConfig({
       name: "chromium",
       use: { ...devices["Desktop Chrome"] },
     },
-    {
-      name: "firefox",
-      use: { ...devices["Desktop Firefox"] },
-    },
+    // {
+    //   name: "firefox",
+    //   use: { ...devices["Desktop Firefox"] },
+    // },
   ],
 });

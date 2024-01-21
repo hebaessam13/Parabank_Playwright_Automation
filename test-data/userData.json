@@ -1,21 +1,40 @@
 {
-    "registerData": 
-    {
-        "firstName":"Stitch",
-        "lastName":"Lilo",
-        "address":"Pelekai residence",
-        "city":"Hanapepe",
-        "state":"Hawaii",
-        "zipCode":"96705",
-        "phone":"9283618493",
-        "ssn":"167391746342323",
-        "username":"liloAndStitch",
-        "password":"lilo&Stitch",
-        "confirmPassword":"lilo&Stitch"
+  "testUserData": {
+    "registerData": {
+      "firstName": "Stitch",
+      "lastName": "Lilo",
+      "address": "Pelekai residence",
+      "city": "Hanapepe",
+      "state": "Hawaii",
+      "zipCode": "96705",
+      "phone": "9283618493",
+      "ssn": "167391746342323",
+      "username": "liloAndStitch",
+      "password": "lilo&Stitch",
+      "confirmPassword": "lilo&Stitch"
     },
-    "loginData":
-    {
-        "username":"liloAndStitch",
-        "password":"lilo&Stitch"
+    "loginData": {
+      "username": "liloAndStitch",
+      "password": "lilo&Stitch"
     }
+  },
+  "userDataTemplate": {
+    "registerData": {
+      "firstName": "x",
+      "lastName": "",
+      "address": "",
+      "city": "",
+      "state": "",
+      "zipCode": "",
+      "phone": "",
+      "ssn": "",
+      "username": "",
+      "password": "",
+      "confirmPassword": ""
+    },
+    "loginData": {
+      "username": "",
+      "password": ""
+    }
+  }
 }

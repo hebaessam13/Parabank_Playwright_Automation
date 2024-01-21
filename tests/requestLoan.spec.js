@@ -1,11 +1,10 @@
 import { test, expect } from "../pages/PagesSetup";
-import { loginData } from "../test-data/userData.json";
 import "../utils/registerationSetup";
 import { loanData } from "../test-data/requestLoanData.json";
+import { registerWithRandomUser } from "../workflows/users";
 
-test.beforeEach(async ({ loginPage }) => {
-  await loginPage.goTo();
-  await loginPage.loginUserWith(loginData.username, loginData.password);
+test.beforeEach(async ({ page }) => {
+  await registerWithRandomUser(page);
 });
 test.describe("AC-02", () => {
   for (let data of loanData) {

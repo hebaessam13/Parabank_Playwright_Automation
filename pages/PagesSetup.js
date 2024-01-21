@@ -1,4 +1,4 @@
-const base = require("@playwright/test");
+import { test as baseTest } from "@playwright/test";
 import { RegisterPage } from "./RegisterPage";
 import { AdminPage } from "./AdminPage";
 import { LoginPage } from "./LoginPage";
@@ -8,7 +8,7 @@ import { TransferFundsPage } from "./TransferFundsPage";
 import { RequestLoanPage } from "./RequestLoanPage";
 import { BillPayPage } from "./BillPayPage";
 
-exports.test = base.test.extend({
+exports.test = baseTest.extend({
   registerPage: async ({ page }, use) => {
     await use(new RegisterPage(page));
   },
@@ -34,4 +34,4 @@ exports.test = base.test.extend({
     await use(new BillPayPage(page));
   },
 });
-exports.expect = base.expect;
+exports.expect = baseTest.expect;
